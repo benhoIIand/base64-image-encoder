@@ -1,32 +1,20 @@
 <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
 <head>
     <meta charset="utf-8">
     <title>Base64 Image Encoder</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1>Drag and drop a file to convert it or click</h1>
 
-    <label for="file">Select image to convert to a base64 string</label>
-    <input type="file" id="file" name="file" />
+    <div id="drop_area">
+        <input type="file" id="file" />
+    </div>
 
-    <blockquote><pre></pre></blockquote>
+    <textarea id="css_box"></textarea>
+    <textarea id="html_box"></textarea>
 
-    <script>
-    var doc = document,
-        form = doc.getElementById('file'),
-        pre = doc.getElementsByTagName('pre')[0],
-        reader = new FileReader();
-
-    console.log(form);
-    form.onchange = function(e) {
-        var file = form.files[0];
-        var reader = new FileReader();
-        reader.readAsDataURL(file);
-        reader.onload = function(e) {
-            pre.innerHTML = pre.innerHTML + e.target.result;
-        };
-    };
-    </script>
-
+    <script src="converter.js"></script>
 </body>
 </html>

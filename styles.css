@@ -1,0 +1,58 @@
+body, div, textarea, button {
+    position:relative;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    font: inherit;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing:border-box;
+    -webkit-font-smoothing:antialiased;
+    font-smoothing:antialiased
+}
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    padding: 4%;
+    font-size: 13px;
+}
+h1 {
+    margin: 20px 0;
+    color: #333;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+#drop_area {
+    width: 100%;
+    height: 300px;
+    max-height: 200px;
+    border: 4px dashed #FFB2B2;
+    margin-bottom: 30px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+}
+#drop_area:hover {
+    border: 4px dashed red;
+}
+#file {
+    display: none;
+}
+button {
+    margin-bottom: 10px;
+}
+textarea {
+    width: 99%;
+    padding: 4px;
+    min-height: 200px;
+    margin-bottom: 30px;
+    font-size: 90%;
+    resize: vertical;
+}
