@@ -49,7 +49,7 @@ var setBackgroundImage = function(code) {
 };
 
 var showEncodedImage = function(code) {
-    cssBox.innerHTML = "background-image: url('" + code + "')";
+    cssBox.innerHTML = "background-image: url('" + code + "');";
     htmlBox.innerHTML = '<img src="' + code + '" />';
 };
 
